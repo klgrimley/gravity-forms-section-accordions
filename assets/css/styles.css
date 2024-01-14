@@ -1,31 +1,41 @@
-.hidden {
-  display: none;
+.m_section.hidden {
+	display: none;
 }
 
-.gform_body .gsection.accordion {
-  margin: 0 0 1.5rem 0;
-  padding: 1.5rem;
-  background-color: #EFEFEF;
-  border-radius: 5px;
-  box-shadow: 3px 5px 8px 0px #00000070;
-  border-bottom: none;
+.gform_body .gfield--type-accordion {
+	margin: 0 0 1.5rem 0;
+	padding: 1.5rem;
+	background-color: #EFEFEF;
+	border-radius: 5px;
+	box-shadow: 3px 5px 8px 0px #00000070;
+	border-bottom: none;
 }
 
-.gform_body .gsection.accordion .gsection_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.gform_body .gfield--type-accordion .gsection_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.gform_body .gsection.accordion .toggle-section {
-scroll-margin-top: 100px;
-background-color: unset;
+.gform_body .gfield--type-accordion .toggle-section {
+	scroll-margin-top: 100px;
+	background-color: unset;
+}
+
+.m_section {
+	grid-column-gap: 2%;
+	-ms-grid-columns: (1fr 2%) [12];
+	grid-row-gap: 16px;
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: repeat(auto-fill,auto);
+	width: 100%;
 }
 
 @media screen and (min-width: 640px) {
-  .gotrgf_form_overview_container {
+	.gotrgf_form_overview_container {
 
-    position: sticky !important;
-    top: 100px;
-  }
+		position: sticky !important;
+		top: 100px;
+	}
 }
