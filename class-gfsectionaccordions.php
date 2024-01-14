@@ -62,8 +62,7 @@ class GFSectionAccordions extends GFAddOn {
 				'deps'    => array( 'jquery' ),
 				'enqueue' => array(
 					array( 
-						'field_types' => array( 'accordion' ),
-						'admin_page'  => array( false )
+						'field_types' => array( 'accordion' )
 					),
 				)
 			),
