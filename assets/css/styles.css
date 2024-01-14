@@ -1,4 +1,4 @@
-.m_section.hidden {
+.gfield--type-accordion .m_section.hidden {
 	display: none;
 }
 
@@ -22,7 +22,7 @@
 	background-color: unset;
 }
 
-.m_section {
+.gfield--type-accordion .m_section {
 	grid-column-gap: 2%;
 	-ms-grid-columns: (1fr 2%) [12];
 	grid-row-gap: 16px;
